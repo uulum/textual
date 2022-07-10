@@ -5,12 +5,13 @@ from ._placeholder import Placeholder
 from ._scroll_view import ScrollView
 from ._static import Static
 from ._tree_control import TreeControl, TreeClick, TreeNode, NodeID
-from ._directory_tree import DirectoryTree, FileClick
+from ._directory_tree import DirectoryTree, DirClick, FileClick
 
 __all__ = [
     "Button",
     "ButtonPressed",
     "DirectoryTree",
+    "DirClick",
     "FileClick",
     "Footer",
     "Header",

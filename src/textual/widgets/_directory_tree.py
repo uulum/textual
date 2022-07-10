@@ -23,6 +23,13 @@ class DirEntry:
 
 
 @rich.repr.auto
+class DirClick(Message, bubble=True):
+    def __init__(self, sender: MessageTarget, path: str) -> None:
+        self.path = os.path.normpath(path)
+        super().__init__(sender)
+
+
+@rich.repr.auto
 class FileClick(Message, bubble=True):
     def __init__(self, sender: MessageTarget, path: str) -> None:
         self.path = path
